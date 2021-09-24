@@ -1,0 +1,159 @@
+@import "global.scss";
+
+.sidebar {
+  width: 375px;
+  height: 810px;
+  background-color: #1e213a;
+  background-image: url("../assets/Cloud-background.png");
+  background-repeat: no-repeat;
+  background-position-x: -120px;
+  background-position-y: 50px;
+  background-attachment: scroll;
+  background-size: 600px 400px;
+
+  .container-sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: #1e213aab;
+  }
+}
+
+.navbar-sidebar {
+  width: 95%;
+  height: 76px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  visibility: visible;
+  padding: 0 11px;
+
+  button:first-child {
+    width: 161px;
+    height: 40px;
+    background: #6e707a;
+    color: #e7e7eb;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      background-color: rgb(110, 112, 122);
+    }
+  }
+
+  button:last-child {
+    color: #e7e7eb;
+    width: 40px;
+    height: 40px;
+    background: #6e707a;
+    border-radius: 100%;
+    background-image: url("../assets/my_location.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      background-color: rgb(110, 112, 122);
+    }
+  }
+}
+
+.image-sidebar {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 150px;
+    height: 174px;
+  }
+}
+
+.date-sidebar {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 144px;
+    line-height: 149px;
+    color: #e7e7eb;
+    span {
+      font-size: 50px;
+      color: #e7e7eb9c;
+    }
+  }
+
+  h2 {
+    color: #a09fb1;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.date-texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .date-subtexts {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p {
+      color: #88869d;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  .date-city {
+    width: 90px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p {
+      color: #88869d;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 981px) {
+  .sidebar {
+    width: 459px;
+    height: 1023px;
+  }
+
+  .date-sidebar {
+    height: 600px;
+    justify-content: space-around;
+  }
+}
+
+@media fullHD and (min-width: 1920px) {
+}

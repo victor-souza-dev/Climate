@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+.container {
+  width: 375px;
+  height: 2.528px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 981px) {
+  body,
+  .container {
+    width: 1440px;
+    height: 1023px;
+    flex-direction: row;
+  }
+}
