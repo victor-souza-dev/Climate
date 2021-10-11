@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
+
 import '../styles/sidebar.scss';
 import imageSidebar from '../assets/Shower.png';
 import place from '../assets/place.png';
+import { City } from '../components/City';
 
 export function Sidebar() {
+
     return (
         <aside className="sidebar">
             <div className="container-sidebar">
@@ -26,7 +30,7 @@ export function Sidebar() {
                         </div>
                         <div className="date-city">
                             <img src={place} />
-                            <p>Helsinki</p>
+                            <City></City>
                         </div>
                     </section>
                 </section>
