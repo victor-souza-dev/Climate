@@ -155,5 +155,13 @@
   }
 }
 
-@media fullHD and (min-width: 1920px) {
+@media (min-width: 1900px) {
+  .sidebar {
+    width: 25%;
+    height: 100%;
+  }
+
+  .date-sidebar {
+    height: 48%;
+  }
 }

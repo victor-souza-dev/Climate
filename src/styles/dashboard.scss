@@ -230,3 +230,55 @@
     width: 47%;
   }
 }
+
+@media (min-width: 1900px) {
+  .dashboard-container {
+    width: 75%;
+    height: 100vh;
+
+    .main {
+      height: 58%;
+    }
+
+    .footer {
+      height: 10%;
+    }
+  }
+
+  .titleData {
+    width: 70%;
+  }
+
+  .data {
+    width: 70%;
+  }
+
+  .dataWheater {
+    width: 47.5%;
+    height: 47%;
+
+    p {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 85px;
+
+      span {
+        font-size: 50px;
+      }
+    }
+
+    div {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .dataWheater:nth-child(2) {
+    p {
+      margin-bottom: 18px;
+    }
+  }
+}

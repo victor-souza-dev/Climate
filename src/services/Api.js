@@ -28,9 +28,10 @@ export async function fetchLocation(data) {
         
         if(data[0].woeid) {
             fetchData(data[0].woeid);
-        }
-        
+        }        
     } catch(error) {
         console.error(`Api.js/fetchLocation:${error}`);
     }
+
+    
 }

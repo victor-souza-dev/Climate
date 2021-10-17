@@ -15,7 +15,8 @@ export function GeoLocation() {
     }
     
     navigator.geolocation.watchPosition(success, error, {
-        enableHighAccuracy:true, maximumAge:30000, 
+        enableHighAccuracy:true, 
+        maximumAge: 30000, 
         timeout: 2000,
     });
 }

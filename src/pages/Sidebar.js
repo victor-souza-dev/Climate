@@ -5,7 +5,7 @@ import imageSidebar from '../assets/Shower.png';
 import place from '../assets/place.png';
 import { City } from '../components/City';
 
-export function Sidebar() {
+export function Sidebar(data) {
 
     return (
         <aside className="sidebar">
@@ -30,7 +30,7 @@ export function Sidebar() {
                         </div>
                         <div className="date-city">
                             <img src={place} />
-                            <City></City>
+                            <City value={data}></City>
                         </div>
                     </section>
                 </section>

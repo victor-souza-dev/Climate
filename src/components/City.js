@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 
-export function City(data) {
+export function City(props) {
 
-    const city = data.title;
-    
-    let [getCity, setCity] = useState("Desconhecido!")
-    
-    function funcCity() {
-        setCity(getCity = city);
-    }
-
-    window.addEventListener("load", funcCity)
+    console.log(props.value)
 
     return(
     <div>
-        <p>{getCity}</p>
+        <p>{}</p>
     </div>
     );
 }
